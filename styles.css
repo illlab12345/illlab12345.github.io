@@ -143,3 +143,46 @@ body{font-size:18px;line-height:1.7}
 .hero-art:before{background:radial-gradient(circle at 49% 34%,#f3ece5 0,transparent 42%),linear-gradient(145deg,#c3d6ca,#e7e9de 62%,#bdcfc4)}
 .profile-avatar{position:relative;z-index:2;display:block;width:min(70%,390px);height:auto;aspect-ratio:1;object-fit:cover;border:9px solid var(--paper);border-radius:50%;box-shadow:0 20px 45px rgba(28,65,55,.18)}
 @media(max-width:640px){.profile-avatar{width:min(70%,238px);border-width:6px;transform:translateY(-16px)}}
+
+/* Desktop reading width: keep generous margins without shrinking mobile text. */
+@media(min-width:901px){
+  .shell{width:min(1180px,calc(100% - 12vw))}
+  body{font-size:16.5px;line-height:1.65}
+  .header-inner{height:80px}
+  .brand-mark{font-size:30px}.brand-name{font-size:16px}
+  .nav{gap:26px}.nav a{font-size:16px}
+  .section-kicker,.eyebrow{font-size:13px}
+  .about-copy p{font-size:17px;line-height:1.72}
+  .publication-authors,.publication-venue,.manuscript-authors{font-size:16px}
+  .timeline-column h3{font-size:30px}.timeline-item h4{font-size:18px}.timeline-item p{font-size:16px}
+  .honor-item p,.misc-card p{font-size:16px}
+}
+@media(min-width:1100px){
+  .hero{min-height:0;gap:clamp(42px,5vw,72px);padding-top:58px;padding-bottom:76px}
+  .hero-copy{max-width:620px}.hero h1{font-size:clamp(72px,6vw,96px);line-height:.92}
+  .hero-lede{font-size:clamp(24px,2vw,30px);max-width:510px}.hero-detail{font-size:16px}
+  .hero-art{height:clamp(420px,34vw,500px);min-height:420px;max-height:500px}
+  .profile-avatar{width:min(67%,340px)}
+  .overview>*{min-height:94px;padding:17px 18px}.overview-label{font-size:22px}
+  .overview-item strong{font-size:30px}.overview-item span{font-size:13px}.overview-link{font-size:14px}
+  .about-band{padding:94px 0}.about-grid{gap:clamp(55px,6vw,95px)}
+  .about-grid h2{font-size:clamp(46px,3.6vw,58px)}.about-copy{padding-top:30px}
+  .section{padding-top:88px;padding-bottom:96px}.section-heading{margin-bottom:40px}
+  .section-heading h2{font-size:clamp(44px,3.6vw,54px)}.section-aside{font-size:15px}
+  .focus-card{min-height:300px;padding:28px}.focus-card h3{font-size:30px;margin-top:52px}.focus-card p{font-size:16px}
+  .publication{grid-template-columns:105px minmax(0,1fr);gap:27px;padding:29px 4px}
+  .publication-year{font-size:24px}.publication-body h3{font-size:clamp(24px,1.9vw,28px)}
+  .publication-links a{font-size:14px}.publication-key{margin-left:132px;font-size:13px}
+  .manuscript-card{min-height:265px;padding:30px 32px}.manuscript-card h3{font-size:27px}
+  .timeline-grid{gap:65px}.timeline-item{grid-template-columns:115px 1fr;padding:23px 0}
+  .service-inner h2{font-size:52px}.service-section{padding:75px 0}
+  .contact-section{padding:82px 0}.contact-inner h2{font-size:64px}.contact-link{font-size:22px}
+  .misc-card{min-height:270px;padding:28px}.misc-card h3{font-size:28px}
+}
+@media(min-width:901px) and (max-width:1099px){
+  .hero{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:32px;min-height:0;padding-top:55px;padding-bottom:70px}
+  .hero-copy{max-width:none}.hero h1{font-size:clamp(60px,6.3vw,70px);line-height:.92}
+  .hero-lede{font-size:23px;line-height:1.2}.hero-detail{font-size:15px}
+  .hero-art{width:100%;height:400px;min-height:400px;max-width:none;margin:0}
+  .profile-avatar{width:min(70%,280px)}
+}
